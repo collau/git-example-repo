@@ -1,0 +1,45 @@
+#Git Commands
+
+# Cloning a file
+git clone <url> <folder name>
+#This will create a folder git_example_repo in your working directory
+git clone https://github.com/collau/git-example-repo.git git_example_repo
+
+# Status
+git status
+# This will let you know the status
+# which branch you are on
+# commits
+# untracked files
+
+# Staging a file
+git add <file name>
+git add README.md
+
+# Unstaging a file
+git rm --cached <file name>...
+git rm --cached README.md
+
+# Committing a file with a commit message
+git commit -m "<message>"
+
+# Pushing your commit
+git push <which branch> <branch>
+git push origin master
+
+# Seeing differences in a file
+git diff <file name>
+git diff README.md
+
+# Discard changes in working directory
+git checkout <file name>
+git checkout README.md
+
+# Log
+git log
+# nicer format
+git log --topo-order --all --graph --date=local --pretty=format:'%C(green)%h%C(reset) %><(55,trunc)%s%C(red)%d%C(reset) %C(blue)[%an]%C(reset) %C(yellow)%ad%C(reset)%n'
+
+
+# Go back to a certain commit
+git checkout <commit number>
